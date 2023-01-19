@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online exam</title>
+</head>
+<body>
+ <u><h1 style="text-align: center;">QUIZ</h1> </u>
+ <div style="margin: 100px;">
+  <h3  style="font-size: 25px;">1)who is the ceo of google?</h3>
+  <input type="radio" name="q1">Larry page<br>
+  <input type="radio" name="q1" id="a">Sundar pichai<br>
+  <input type="radio" name="q1">Bill Gates<br>
+  <input type="radio" name="q1">Elon Musk<br>
+  <h3 style="font-size: 25px;">2)What is the full form of HTML?</h3>
+  <input type="radio" name="q2" id="b">Hyper Text Markup Langunage<br>
+  <input type="radio" name="q2">High Text Markup Langunage<br>
+  <input type="radio" name="q2">Hyper Text Makeup Langunage<br>
+  <input type="radio" name="q2">Hyper Text Markup Learner<br>
+  <h3 style="font-size: 25px;">3)Who is the canadian prime minister</h3>
+  <input type="radio" name="q3">Modi <br>
+  <input type="radio" name="q3">Trump<br>
+  <input type="radio" name="q3" id="c">Justin Truedea <br>
+  <input type="radio" name="q3">Kim<br>
+  <h3 style="font-size: 25px;">4)A computer cannot "boot" if it does not have the _____</h3>
+  <input type="radio" name="q4">Compiler<br>
+  <input type="radio" name="q4">loader<br>
+  <input type="radio" name="q4">Assembler<br>
+  <input type="radio" name="q4" id="d">A operating system<br>
+  <h3 style="font-size: 25px;">5)who is Tim cook</h3>
+  <input type="radio" name="q5" id="e">CEO of Apple inc.<br>
+  <input type="radio" name="q5">CEO of Facebook<br>
+  <input type="radio" name="q5">CEO of UST <br>
+  <input type="radio" name="q5">CEO of microsoft<br>
+  <h3 style="font-size: 25px;">6)Junk e-mail is also called ______?</h3>
+  <input type="radio" name="q6">Spoof<br>
+  <input type="radio" name="q6" id="f">Spam<br>
+  <input type="radio" name="q6">Sniffer script<br>
+  <input type="radio" name="q6">Spool<br><br>
+  <input type="button" value="submit" onclick="result()">
+</div>
+<script>
+    function result(){
+        var score=0;
+        if(document.getElementById("a").checked){
+            score++;
+          }
+        if(document.getElementById("b").checked){
+               score++;
+           } 
+        if(document.getElementById("c").checked){
+               score++;
+           }   
+        if(document.getElementById("d").checked){
+             score++;
+          }  
+        if(document.getElementById("f").checked){
+               score++;
+           }  
+        if(document.getElementById("e").checked){
+                score++;
+            } 
+        document.write("SCORE=",score);  
+          }
+</script>
+</body> 
+</html>

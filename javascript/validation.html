@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/signup.css">
+    </head>
+    <body>
+        <html>
+	<head>
+		<title>
+				Sign Up
+		</title>
+	</head>
+	<script>
+		function validateform()
+		{
+			var fname=document.myform.fname.value;
+			var lname=document.myform.lname.value;
+			var email=document.myform.email.value;  
+ 			var atposition=email.indexOf("@");  
+			var dotposition=email.lastIndexOf(".");
+			var password=document.myform.password.value;
+			var confirm=document.myform.confirm.value;
+			var uname=document.myform.uname.value;
+			var phone=document.myform.phone.value;
+			var pin=document.myform.pin.value;
+			
+			
+			if (fname==null || fname=="")
+			{  
+  				alert("First Name can't be blank");  
+
+			}
+			if (lname==null || lname=="")
+			{  
+  				alert("Last Name can't be blank");  
+			}
+			if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+			{  
+  				alert("Please enter a valid e-mail address");  
+			}
+			if(isNaN(phone))
+			{
+				alert("Enter the number")
+			}
+			else if(phone.length!=10)
+			{
+				alert("Enter valid number")
+			}
+			if(isNaN(pin)||pin.length!=6)
+			{
+				alert("Enter valid pin")
+			}
+			if(uname==''||uname==null||(!isNaN(uname))||uname.length<5||uname.length>15)
+			{
+				alert("Must fill username")
+				alert("Should not enter number")
+				alert("Username must have 5to 15 charcters ")
+			}
+			if(password.length<6)
+			{  
+  				alert("Password must be at least 6 characters long.");
+			}
+			if(password!=confirm)
+			{
+				alert("Password not matching")
+			}
+			
+			
+		}
+	</script>
+	<body background="img/1.png">
+		<div class="top">
+			Dream Travel <span class="top1">and Tourism</span> 
+		</div>
+		<hr>
+		<div class="nav">
+				<a href="home.html" class="nav1">Home</a>
+				<a href="about.html" class="nav2">About</a>
+				<a href="package.html" class="nav3">Packages</a>
+				<a href="signin.html" class="nav4">Sign In</a>
+				<a href="signup.html" class="nav5">Sign Up</a> 
+		</div>
+		<hr>
+		<div class="signup">
+	<center><h1><u>Sign up</u></h1></center>
+    <br>
+	<center>
+						<form name="myform" onsubmit="return validateform()">
+                            
+							  <label for="fname">First Name : </label> 
+							  <input type="text" id="fname" class="fname" name="fname" >
+						  
+						  
+							  <label for="lname">Last Name : </label> 
+							  <input type="text" id="lname" name="lname" >
+						  
+						  
+							  <label for="dob">Date of Birth :</label>  
+							  <input type="date" id="dob" name="dob" ><br> <br> 
+						  							  Gender:  
+							  <input type="radio" id="Male" name="gender" value="Male">
+								<label for="Male">Male</label>
+								<input type="radio" id="Female" name="gender" value="Female">
+								<label for="Female">Female</label>
+								<input type="radio" id="Others" name="gender" value="Others">
+								<label for="Others">Others</label><br><br>
+							  
+						  
+							  <label for="email">Email : </label>  
+							  <input type="text" id="email" name="email" > 
+						  
+						  
+							  <label for="phone">Phone : </label> 
+							  <input type="text" id="phone" name="phone" ><br><br>
+                              
+						  
+                              <label for="address">Address</label> :  
+							  <input type="textname" id="address" class="address" ><br><br>  
+                              
+
+						          State :  
+		                        <input type="text" id="state" name="state" > 
+							 
+                               City :  
+		                      <input type="text" id="City" name="City" >  
+                             
+                             
+                                Pincode :  
+							  <input type="text" id="pin" name="pin" >  <br><br>
+	  
+	                        
+	  
+		                        <label for="uname">Username : </label>  
+		                        <input type="text" id="uname" name="uname" >
+	  
+	  
+		                        <label for="password">Password : </label>  
+		                        <input type="password" id="password" >  
+                               
+	  
+	                            <label for="confirm">Confirm Password : </label>  
+		                        <input type="password" id="confirm" >  
+	  
+                                <br><br>
+		                        <input type="submit" value="Register">
+                                <br><br>
+                                Already user ?   <a href="signin.html" class="login">Sign in</a>
+                        </form>
+    </center>
+</div>
+	</body>
+	</html>
+    </body>
+</html>

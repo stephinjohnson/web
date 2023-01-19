@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <body>
+            <button id="b4">Change BG</button>
+            <button id="b5">Change image</button>
+            <script>
+                function changebg(){
+			
+				document.body.style.backgroundColor="#fcba03"
+                }
+                function changeimg()
+			{
+				document.body.style.backgroundImage="URL('https://www.ajce.in/home/images/Gallery-widget_ajce.jpg')"
+            }
+
+            document.getElementById("b4").addEventListener("click",changebg)
+               
+            document.getElementById("b5").addEventListener("click",changeimg)
+
+            </script>
+        </body>
+    </head>
+</html>

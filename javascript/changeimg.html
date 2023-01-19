@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <body>
+            <img id="img1" onmouseover="setNew()"
+            onmouseout="setOld()" src="first.jpeg" width="500"/>
+
+            <script>
+                function setNew()
+                {
+                    document.getElementById("img1").src="sec.jpg";
+                }
+                function setOld()
+                {
+                    document.getElementById("img1").src="first.jpeg";
+                }
+
+            </script>
+        </body>
+    </head>
+</html>

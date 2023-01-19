@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <body>
+            <h1 id="mm"></h1>
+            <hr>
+            <button id="b8">Click here to know Euler Number</button><br>
+            <hr>
+            <button id="b3">Just Click here to know the exact value of pie</button><br>
+            
+            
+            <script>
+                function p(){
+                var pie=Math.PI 
+                document.getElementById("mm").innerHTML=""+pie
+                }
+                function ee(){
+                var eu=Math.E 
+                document.getElementById("mm").innerHTML=""+eu
+                }
+                
+
+                    var r=10
+                    var ar=Math.PI*Math.pow(r,2,"<br>")
+                    document.write("using math function")
+                    
+                    document.write("area is"+ar+"<br>")
+                
+                
+                document.getElementById("b3").addEventListener("click",p)
+                document.getElementById("b8").addEventListener("click",ee)
+               
+            </script>
+        </body>
+    </head>
+</html>

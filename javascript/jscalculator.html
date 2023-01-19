@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <body>
+            
+            <button id="b1">Click here</button><br>
+            <button id="b6">Calculate Sum</button><br>
+            <button id="b7">subtraction</button><br>
+            <button id="b8">division</button><br>
+            <button id="b9">Clear Screen</button><br>
+            Enter 1st num:<input type="textbox" id="t1"><br>
+		    Enter 2nd num:<input type="textbox" id="t2"><br>
+           <script>
+            function ho(){
+                document.getElementById("h1").innerHTML="Stephin's JS Calculator"
+            }
+
+            function add(){
+              var num1=parseInt(document.getElementById("t1").value)
+              var num2=parseInt(document.getElementById("t2").value) 
+              var summation=num1+num2  
+              document.getElementById("h1").innerHTML="sum is"+summation
+            }
+            function subtract(){
+              var num1=parseInt(document.getElementById("t1").value)
+              var num2=parseInt(document.getElementById("t2").value)
+              var sub=num1-num2 
+              document.getElementById("h1").innerHTML="difference is"+sub
+            }
+            function division(){
+                
+              var num1=parseInt(document.getElementById("t1").value)
+              var num2=parseInt(document.getElementById("t2").value)
+              var div=num1/num2 
+              document.getElementById("h1").innerHTML="division  is"+div
+            }
+            function clear(){
+                document.getElementById("h1").innerHTML=""
+            }
+            document.getElementById("b1").addEventListener("click",ho)
+            document.getElementById("b6").addEventListener("click",add)
+            document.getElementById("b7").addEventListener("click",subtract)
+            document.getElementById("b8").addEventListener("click",division)
+            document.getElementById("b9").addEventListener("click",clear)
+              
+            </script>
+           <center><h1 id="h1"></h1></center>
+        </body>
+    </head>
+</html>
